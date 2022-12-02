@@ -34,14 +34,9 @@ public class Ejercicio_Extra_5 {
         
         System.out.println("Calculando Importe a Pagar:");
         switch(clase_socio){
-            case 'A':
-                System.out.println("Valor a Pagar por el Socio:"+costo_tratamiento*(1-0.50f));
-                break;
-            case 'B':
-            System.out.println("Valor a Pagar por el Socio:"+costo_tratamiento*(1-0.35f));
-                break;
-            case 'C':
-                System.out.println("Valor a Pagar por el Socio:"+costo_tratamiento);
+            case 'A' -> System.out.println("Valor a Pagar por el Socio:"+costo_tratamiento*(1-0.50f));
+            case 'B' -> System.out.println("Valor a Pagar por el Socio:"+costo_tratamiento*(1-0.35f));
+            case 'C' -> System.out.println("Valor a Pagar por el Socio:"+costo_tratamiento);
         }
         
         
