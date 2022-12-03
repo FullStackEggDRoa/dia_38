@@ -18,11 +18,12 @@ public class Ejercicio_19 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner leer = new Scanner (System.in);
-        int A [][]={{0,-2,4},{2,0,2},{-4,-2,0}};
+        int A [][]=new int [3][3];
+        //int A [][]={{0,-2,4},{2,0,2},{-4,-2,0}};
         int B [][]=new int [3][3];
         
         System.out.println("Ingresando Valores Aleatorios de la Matriz A ...");
-        //llenarMatrizAleatorio(A);
+        llenarMatrizAleatorio(A);
         System.out.println("Matriz A Generada:");
         mostrarMatriz(A);
         System.out.println("Metodo Comprobación Antisimetría A=-AT");
@@ -30,7 +31,7 @@ public class Ejercicio_19 {
         transponerMatriz(A,B);
         System.out.println("Matriaz AT Generada:");
         mostrarMatriz(B);
-        System.out.println("Validando si es Antisimétrica ...");
+        System.out.println("Validando Antisimétrica ...");
         esMatrizAntiSimétrica(A,B);
     }
     public static void llenarMatrizAleatorio(int[][] matriz){
@@ -38,7 +39,7 @@ public class Ejercicio_19 {
         Scanner leer = new Scanner (System.in);
         for (int i=0;i<matriz.length;i++) {   
             for (int j=0;j<matriz.length;j++){
-                    matriz[i][j]=(int)(Math.random()*9)+1;   
+                    matriz[i][j]=(int)(Math.random()*18)-9;   
             }
             
         }
