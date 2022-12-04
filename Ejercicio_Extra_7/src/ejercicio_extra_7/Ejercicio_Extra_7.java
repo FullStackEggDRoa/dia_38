@@ -12,7 +12,7 @@ import java.util.Scanner;
 /**
  *
  * @author droa
- * Versión con WHILE
+ * Versión con Do wHILE
  */
 public class Ejercicio_Extra_7 {
 
