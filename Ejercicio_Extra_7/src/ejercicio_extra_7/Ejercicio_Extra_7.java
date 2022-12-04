@@ -30,13 +30,17 @@ public class Ejercicio_Extra_7 {
         int num=0;
         int n_cont=0;
         boolean primerloop=true;
-        while(n_cont<n){
-            System.out.println("Ingresa el número "+(n_cont+1)+" (n>0): ");
-            num=leer.nextInt();
-            while(num<0){
-                System.out.println("Ingresa nuevamente el número "+(n_cont+1)+" (n>0): ");
-                num=leer.nextInt();
-            }
+        do{
+            do{
+                if(num<0)
+                {
+                    System.out.println("Ingresa nuvamente el número "+(n_cont+1)+" (n>0): ");
+                    num=leer.nextInt();
+                }else{
+                    System.out.println("Ingresa el número "+(n_cont+1)+" (n>0): ");
+                    num=leer.nextInt();
+                }
+            }while(num<0);
             
             //Sumatoria al promedio
             n_sumatoria+=num;
@@ -54,7 +58,7 @@ public class Ejercicio_Extra_7 {
                 }
             }
             n_cont++;
-        }
+        }while(n_cont<n);
         System.out.println("El Valor Máximo ingresado es: "+n_max);
         System.out.println("El Valor Mínimo ingresado es: "+n_min);
         System.out.println("El Valor Promedio de los números ingresados es: "+String.format("%.3g",((float)n_sumatoria/(float)n)));
