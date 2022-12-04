@@ -47,6 +47,7 @@ public class Ejercicio_Extra_7 {
             //validación mínimo
             if(primerloop==true){
                 n_min=num;
+                primerloop=false;
             }else{
                 if(num<n_min){
                 n_min=num;
